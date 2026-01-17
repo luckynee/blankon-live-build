@@ -40,7 +40,7 @@ LB_PARENT_MIRROR_CHROOT="http://arsip-dev.blankonlinux.id/dev/"
 LB_PARENT_MIRROR_CHROOT_SECURITY="http://arsip-dev.blankonlinux.id/dev/"
 
 # Set parent mirror which ends up in the image
-LB_PARENT_MIRROR_BINARY="none"
+LB_PARENT_MIRROR_BINARY="http://arsip-dev.blankonlinux.id/dev/"
 
 # Set security parent mirror which ends up in the image
 LB_PARENT_MIRROR_BINARY_SECURITY="http://arsip-dev.blankonlinux.id/dev/"
