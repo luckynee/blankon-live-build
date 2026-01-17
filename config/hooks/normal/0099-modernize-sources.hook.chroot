@@ -18,6 +18,6 @@ fi
 
 
 echo "[RENAME SOURCES]"
-if [ -f /etc/apt/sources.list.d/zz-sources.sources]; then
+if [ -f /etc/apt/sources.list.d/zz-sources.sources ]; then
     mv /etc/apt/sources.list.d/zz-sources.sources /etc/apt/sources.list.d/blankon.sources
 fi
