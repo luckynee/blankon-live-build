@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "[MODERNIZE SOURCE]"
-apt-get modernize-sources -y
+apt-get modernize-sources --assume-yes
 
 echo "[REMOVE SOURCE WITH OLD FORMAT]"
 rm -f /etc/apt/sources.list.bak
