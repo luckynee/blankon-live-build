@@ -7,7 +7,9 @@ echo "[REMOVE SOURCE WITH OLD FORMAT]"
 rm -f /etc/apt/sources.list.bak
 rm -f /etc/apt/sources.list.d/*.bak
 
-sed -i '/file:\/root\/packages/,/^$/d' /etc/apt/sources.list.d/*.sources
+echo "I: Removing temporary local package repositories..."
+rm -f /etc/apt/sources.list.d/packages.sources
+rm -f /etc/apt/sources.list.d/packages.list
 
 echo "[REMOVE DUPLICATION]"
 if [ -f /etc/apt/sources.list ]; then
