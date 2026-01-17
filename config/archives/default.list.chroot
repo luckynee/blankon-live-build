@@ -1,2 +1,6 @@
-deb http://arsip-dev.blankonlinux.id/dev verbeek main restricted extras
-deb http://arsip-dev.blankonlinux.id/dev verbeek-security main restricted extras
+Types: deb
+URIs: http://arsip-dev.blankonlinux.id/dev/
+Suites: verbeek
+Components: main restricted extras
+Signed-By: /usr/share/keyrings/blankon-archive-keyring.gpg
+
