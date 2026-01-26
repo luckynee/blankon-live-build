@@ -131,6 +131,14 @@ if tail -n 10 "$LOG_FILE" | grep -q "P: Build completed successfully"; then
       echo "$TODAY-$TODAY_COUNT" > "$JAHITAN_PATH/current/current.txt"
 
       echo "Artifacts saved to $TARGET_DIR"
+
+      if [ -x ./upload-docker.sh ]; then
+          if ! ./upload-docker.sh "$TARBALL" "$CLEAN_REPO_URL" "$BRANCH" "$COMMIT"; then
+              echo "Warning: GHCR upload failed."
+          fi
+      else
+          echo "Warning: ./upload-docker.sh is missing or not executable."
+      fi
   else
        echo "Error: Output tarball not found."
   fi
